@@ -1,0 +1,89 @@
+.mega_menu{margin:0;padding:0;}
+.megamenu *{margin:0;padding:0;font-family:inherit;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+ul.megamenu{list-style:none;line-height:1;overflow:visible!important}
+ul.megamenu:after{margin:0;padding:0;content:"";display:block;height:0;clear:both}
+ul.megamenu li{float:left;display:inline;padding:0;}
+ul.megamenu li a.menu-target:after{content:"";width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:3px solid #fff;font-size:0;line-height:0;bottom:22px;right:5px;position:absolute}
+ul.megamenu li a{display:block;line-height:40px;padding:0 20px;text-decoration:none;color:#333;font-size:14px;font-weight:500}
+ul.megamenu li a:hover,ul.megamenu li a.hover-menu{background:#333;color:#fff}
+ul.megamenu ul{position:absolute;display:none;top:100%}
+ul.megamenu li a.hover-menu>ul{display:block}
+ul.megamenu ul.leftmenulist li{z-index:72;width:100%;float:none;position:relative;}
+ul.megamenu ul.rightmenulist li{z-index:72;width:25%;float:none;}
+ul.megamenu ul li a{text-transform:none;font-weight:400}
+ul.megamenu ul li a:hover,ul.megamenuid ul li a.hover{background:0 0;color:#fff}
+ul.megamenu ul ul{display:none;left:100%;top:0}
+ul.megamenuid li div.megasubmenu{background:#333;position:absolute;width:100%;z-index:90;left:0;top:100%;overflow:hidden;min-height:150px;visibility:hidden;opacity:0;color:#888;box-shadow:0 10px 7px -7px rgba(0,0,0,.1);transition:all .3s ease-in-out;display:none}
+ul.megamenuid li a.hover-menu~div.megasubmenu{visibility:visible;opacity:1;display:block;-webkit-animation-name:fadeIn;animation-name:fadeIn;-webkit-animation-duration:.7s;animation-duration:.7s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+ul.megamenuid ul,ul.megamenuid ul li{display:block!important;border:0!important;margin:0!important;padding:0!important}
+ul.megamenuid ul li{background:0 0!important;float:left!important}
+ul.megamenuid ul.leftmenulist{position:absolute;width:15%;left:0;top:0;bottom:0;background:0 0}
+ul.megamenuid ul.leftmenulist a{border-left:none!important;color:#ccc;font-weight:500;font-size:12px}
+ul.megamenuid ul.rightmenulist{position:relative;display:block;width:85%;float:right;margin:0!important;background:0 0}
+ul.megamenuid ul.rightmenulist li{display:block;overflow:hidden;position:relative;height:100%;padding:20px 20px 20px 0!important}
+ul.megamenuid ul.rightmenulist li .thumb-container{width:100%;height:100%;position:relative;overflow:hidden;font-size:0;display:inline}
+ul.megamenuid ul.rightmenulist li .thumb-container img{width:100%;height:130px;margin-bottom:10px}
+ul.megamenuid ul.rightmenulist li a{display:block;border-left:none!important;padding:0!important;line-height:1.1;color:#ccc;font-weight:500;font-size:12px}
+ul.megamenuid ul.rightmenulist li a:hover{color:#fff;background:0 0}
+ul.megamenu li.has-submenu,ul.megamenu li.has-sub a{position:relative;}
+ul.megamenu li.has-submenu .rightmenulist,ul.megamenu li.mega-label .leftmenulist,ul.megamenu li.has-submenu .menu-icon{display:none!important;}
+ul.megamenu li.has-submenu .leftmenulist,ul.megamenu li.mega-label .rightmenulist{width:100%;}
+ul.megamenu li.has-submenu .megasubmenu{min-width:180px;min-height:100%;overflow:visible;}
+ul.megamenu li.has-submenu>a,ul.megamenu li.has-sub>a{padding:0 25px 0 20px;}
+ul.megamenu li.has-submenu>a:after,ul.megamenu li.has-sub>a:after{content:"";width:0;height:0;position:absolute;margin-top:3px;top:50%;right:10px;border:4px solid transparent;border-top-color:#333;margin-top:-4px;transition:all .4s ease-in-out}
+ul.megamenu li.has-submenu>a:hover:after,ul.megamenu li.has-submenu>a.hover-menu:after,ul.megamenu li.has-sub>a:hover:after,ul.megamenu li.has-sub>a.hover-menu:after{border-top-color:#fff;}
+ul.megamenu li.has-submenu .leftmenulist li{background:#333!important}
+ul.megamenu li.has-submenu .leftmenulist li .loading-icon{display:none}
+ul.megamenu li.mega-label .megasubmenu{padding:0 0 0 20px!important}
+ul.megamenu li.mega-label ul.rightmenulist li .thumb-container img{height:160px}
+ul.megamenu li.mega-label ul.rightmenulist li a{font-size:14px}
+ul.megamenuid .loading-icon{background:url(http://2.bp.blogspot.com/-N9HNU11nhiA/Va-NLcGF0lI/AAAAAAAALW4/HzSlCK7PGeY/s1600/wait.gif) no-repeat;background-size:16px 16px;width:16px;height:16px;position:absolute;top:50%;margin-top:-8px;right:20px}
+ul.megamenuid .menu-icon{border-bottom:4px solid transparent;border-top:4px solid transparent;border-left:4px solid #777;display:block;height:0;margin-top:-4px;position:absolute;right:20px;top:50%;width:0}
+#megamenuid h5:after,#megamenuid h5:before{content:"";position:absolute;left:50%;border-left:2px solid #888;border-right:2px solid #888}
+#megamenuid{background:#efefef;height:40px;width:100%;position:relative;margin:0 auto 10px;padding:0;}
+#megamenuid h5{font-size:16px;margin-top:70px;text-align:center}
+#megamenuid h5:before{top:50px;width:5px;height:2px;margin-left:-4px}
+#megamenuid h5:after{top:55px;width:10px;height:5px;margin-left:-7px;border-top:2px solid #888;border-radius:8px 8px 0 0}
+.menupage_mobile_icon,.menu_mobile_burger,#search-label3,#mega_menu h2,.cssmenu>ul>li.home{display:none}
+
+@media screen and (max-width:800px){
+/* CSS mobile Menu */
+.menu_mobile_burger,.menupage_mobile_icon{position:absolute;top:0;width:41px;text-align:left;padding:0;color:#666;font-size:36px;font-weight:500;line-height:47px;cursor:pointer;z-index:9999;display:block}
+.menu_mobile_burger{right:41px}
+.menupage_mobile_icon{left:0}
+.menupage_mobile_icon svg,.menu_mobile_burger svg,#search-label3 svg{width:30px;height:30px;vertical-align:-7%}
+.menupage_mobile_icon svg path,.menu_mobile_burger svg path,#search-label3 svg path{fill:#333}
+ul.megamenu li.has-sub>a.hover-menu:after,ul.megamenu li.has-sub>a:hover:after,ul.megamenu li.has-submenu>a.hover-menu:after,ul.megamenu li.has-submenu>a:hover:after{border-top-color:transparent}
+ul.megamenu li.has-submenu>a, ul.megamenu li.has-sub>a{padding:0 15px;}
+#css-menu,.cssmenu{height:calc(100% + 2px);width:100%;bottom:-2px}
+#css-menu{position:fixed;top:0;right:100%;z-index:100000;background:#2C2C2D;transition:all .4s ease-in-out;display:block}
+.cssmenu,.cssmenu a,.cssmenu li,.cssmenu ul{margin:0;padding:0;border:0;list-style:none;font-weight:400;text-decoration:none;line-height:1;font-size:16px;position:relative;display:block;float:none}
+.cssmenu{overflow-x:hidden;overflow-y:visible}
+.cssmenu a{line-height:1.3;padding:12px 15px}
+.cssmenu>ul>li{cursor:pointer;background:#2C2C2D;border-top:1px solid #3d3d3d;border-bottom:1px solid #161616;display:block;float:none;}
+.cssmenu>ul>li:first-child{border-top:none;background:#fff;padding-left:15px;cursor:default}
+.cssmenu>ul>li:first-child a{display:inline-block;background:#fff!important;padding:0;line-height:47px}
+.cssmenu>ul>li:last-child{border-bottom:1px solid #3d3d3d}
+ul.megamenu:after{border-top:1px solid #3d3d3d}
+.cssmenu>ul>li:last-child.active{border-bottom:1px solid #c9c9c9}
+.cssmenu>ul>li:last-child>a{border-bottom:1px solid #161616}
+.cssmenu>ul>li>a{font-size:14px;font-weight:500;display:block;color:#fff;text-shadow:0 1px 1px #000;background:#2C2C2D;padding:0 15px;}
+.cssmenu>ul>li>a:hover{text-decoration:none;background:#3d3d3d}
+.cssmenu>ul>li.active{font-weight:700}
+.cssmenu>ul>li.search_icon{display:none;}
+.cssmenu>ul>li.home{display:block;}
+.cssmenu>ul>li.home .close-menu{background:#fff;color:#333;font-size:30px;font-weight:700;padding:0 15px;line-height:47px;display:inline-block;float:right;cursor:pointer;}
+.cssmenu>ul>li.has-sub>a:after,.cssmenu>ul>li.has-submenu>a:after{content:"";position:absolute;top:15px;right:10px;border:5px solid transparent;border-left:5px solid #fff}
+.cssmenu>ul>li.has-sub.active>a:after,.cssmenu>ul>li.has-submenu.active>a:after{right:14px;top:17px;border:5px solid transparent;border-top:5px solid #fff}
+.cssmenu ul ul{position:relative;top:0;}
+.cssmenu ul ul a{background:#efefef;display:block;color:#797979;font-size:14px;font-weight:400;line-height:1;padding:12px 15px;}
+.cssmenu ul ul a:hover{color:#000!important}
+.cssmenu ul ul li{border-bottom:1px solid #c9c9c9;display:block;float:none}
+.cssmenu ul ul li.even a{background:#efefef}
+.cssmenu ul ul li.odd a{background:#e5e5e5}
+.cssmenu ul ul li:last-child{border:none}
+.flow{overflow:hidden;position:relative}
+.cssmenu>ul>li.home .title_blog{width:200px;margin:0;display:inline-block;vertical-align:middle;line-height:47px}
+.cssmenu>ul>li.home .title_blog img{width:100%;height:auto;display:block;max-height:32px;}
+}
