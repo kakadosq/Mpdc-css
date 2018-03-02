@@ -45,5 +45,5 @@ var toc_config = {
     delayLoading: 0
 };
 </script>
-<script src = "https://cdn.rawgit.com/Arlina-Design/redvision/master/daftar-isi-tea.js"> </ script>
+</div>
 DApakah ini?
